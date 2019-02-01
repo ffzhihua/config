@@ -1,0 +1,11 @@
+[root@rd-jg07 system]# cat prometheus.service 
+[Unit]
+Description=auto run prometheus service
+[Service]
+Type=simple
+ExecStart=/opt/prometheus/prometheus --config.file=/opt/prometheus/prometheus.yml
+Restart=always 
+KillMode=process 
+RestartSec=1
+[Install]
+WantedBy=multi-user.target
