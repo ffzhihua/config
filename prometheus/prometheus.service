@@ -1,4 +1,3 @@
-[root@rd-jg07 system]# cat prometheus.service 
 [Unit]
 Description=auto run prometheus service
 [Service]
