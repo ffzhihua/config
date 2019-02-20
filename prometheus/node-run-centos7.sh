@@ -20,6 +20,8 @@ RestartSec=1
 WantedBy=multi-user.target
 " > /etc/systemd/system/node_exporter.service
 
+systemctl enable node_exporter
+
 systemctl start node_exporter 
 
 systemctl status node_exporter 
