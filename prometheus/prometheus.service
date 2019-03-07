@@ -2,7 +2,7 @@
 Description=auto run prometheus service
 [Service]
 Type=simple
-ExecStart=/opt/prometheus/prometheus --config.file=/opt/prometheus/prometheus.yml
+ExecStart=/opt/prometheus/prometheus --config.file=/opt/prometheus/prometheus.yml --storage.tsdb.path=/opt/prometheus/data
 Restart=always 
 KillMode=process 
 RestartSec=1
