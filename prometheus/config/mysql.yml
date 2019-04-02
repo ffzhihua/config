@@ -1,0 +1,5 @@
+    - targets: ['10.66.204.176:9104']
+      labels:
+        release: '10.66.204.176'
+        instance: '10.66.204.176'
+        hostname: "rd-jg06.9.com"
